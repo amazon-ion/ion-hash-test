@@ -1,6 +1,6 @@
 ## ion-hash-test
 
-Test cases to assert correctness of Ion Hash Specification implementations.
+Test cases to assert the correctness of Ion Hash Specification implementations.
 
 ## License
 
