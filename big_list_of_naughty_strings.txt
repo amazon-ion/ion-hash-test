@@ -177,7 +177,7 @@ invalid_ion::
 "''''"'"
 "'"'"''''"
 <foo val=“bar” />
-<foo val=“bar” />
+# <foo val=“bar” />   # duplicate
 <foo val=”bar“ />
 <foo val=`bar' />
 
@@ -476,9 +476,9 @@ ABC<div style="x:\xE2\x80\x89expression(javascript:alert(1)">DEF
 <img\x10src=x onerror="javascript:alert(1)">
 <img\x13src=x onerror="javascript:alert(1)">
 <img\x32src=x onerror="javascript:alert(1)">
-<img\x47src=x onerror="javascript:alert(1)">
+# <img\x47src=x onerror="javascript:alert(1)">   # duplicate
 <img\x11src=x onerror="javascript:alert(1)">
-<img \x47src=x onerror="javascript:alert(1)">
+# <img \x47src=x onerror="javascript:alert(1)">  # duplicate
 <img \x34src=x onerror="javascript:alert(1)">
 <img \x39src=x onerror="javascript:alert(1)">
 <img \x00src=x onerror="javascript:alert(1)">
@@ -556,7 +556,7 @@ _
 #
 #	Strings which can cause user to run code on server as a privileged user (c.f. https://news.ycombinator.com/item?id=7665153)
 
--
+# -   # duplicate
 --
 --version
 --help
